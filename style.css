@@ -1,0 +1,94 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.main {
+  width: 100%;
+  max-width: 250px; /* Adjusted max-width to make it smaller */
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.article {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+strong {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.date {
+  margin: 10px 0;
+  color: hsl(0, 0%, 50%);
+}
+
+.title {
+  font-size: 20px;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 375px) {
+  .main {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    max-width: 300px; /* Adjusted for larger screens */
+  }
+}
